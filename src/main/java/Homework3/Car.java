@@ -31,4 +31,10 @@ public class Car {
         }
     }
 
+    public void printInfo(String name) {
+        System.out.println("Car " + name + " year: " + this.year + "; price: " + this.price + "; is sport car: "
+                + this.isSportCar + "; fuel tank capacity: " + this.fuelTankCapacity + "; free fuel: "
+                + this.freeFuel + "; engine fuel operation system: " + this.engineFuelOperationSystem);
+    }
+
 }

@@ -10,14 +10,8 @@ public class CarPerson {
         car1.useFuel(35);
         car2.changeEngineFuelOperationSystem("diesel");
 
-        System.out.println("Car 1 year: " + car1.year + "; price: " + car1.price + "; is sport car: "
-                + car1.isSportCar + "; fuel tank capacity: " + car1.fuelTankCapacity + "; free fuel: "
-                + car1.freeFuel + "; engine fuel operation system: " + car1.engineFuelOperationSystem);
-
-        System.out.println("Car 2 year: " + car2.year + "; price: " + car2.price + "; is sport car: "
-                + car2.isSportCar + "; fuel tank capacity: " + car2.fuelTankCapacity + "; free fuel: "
-                + car2.freeFuel + "; engine fuel operation system: " + car2.engineFuelOperationSystem);
-
+        car1.printInfo("1");
+        car2.printInfo("2");
     }
 
 }
