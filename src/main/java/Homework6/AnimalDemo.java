@@ -20,6 +20,7 @@ public class AnimalDemo {
 
         tweety.play();
         tweety.fly();
+        tweety.openCage();
         System.out.println();
 
         tom.play();
@@ -28,7 +29,7 @@ public class AnimalDemo {
         max.play();
         System.out.println();
 
-        max.getsVaccine();
+        max.vaccinate();
 
     }
 }

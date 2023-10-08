@@ -1,13 +1,13 @@
 package Homework6;
 
-public class Dog extends Animal implements IAnimal {
+public class Dog extends Animal {
     Dog(String name, String foodType, boolean isVaccinated, double cost) {
         super(name, foodType, isVaccinated, cost);
     }
 
     @Override
     void play() {
-        this.bringStick();
+        bringStick();
         System.out.println(getName() + " brings the stick.");
     }
 
@@ -16,7 +16,7 @@ public class Dog extends Animal implements IAnimal {
         System.out.println(getName() + " barks loudly.");
     }
 
-    private void bringStick(){
+    private void bringStick() {
         System.out.println(getName() + " is trained to bring a stick.");
     }
 }

@@ -1,6 +1,6 @@
 package Homework6;
 
-public abstract class Animal {
+public abstract class Animal implements IAnimal {
 
     private final String name;
     private final String foodType;
@@ -27,21 +27,21 @@ public abstract class Animal {
         this.cost = cost;
     }
 
-    Animal(String name, String foodType, boolean isVaccinated, double cost){
+    Animal(String name, String foodType, boolean isVaccinated, double cost) {
         this.name = name;
         this.foodType = foodType;
         this.isVaccinated = isVaccinated;
         this.cost = cost;
     }
 
-    void eat(){
+    void eat() {
         System.out.println(name + " eats " + foodType);
     }
 
     abstract void play();
 
-    public void getsVaccine(){
-        this.isVaccinated = true;
+    public void vaccinate() {
+        isVaccinated = true;
         System.out.println(name + " got a vaccine shot.");
         System.out.println(name + " is vaccinated: " + isVaccinated);
     }
