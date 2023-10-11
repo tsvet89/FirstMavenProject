@@ -21,7 +21,7 @@ public class Bird extends Animal {
 
     public void synk(int birdCount) {
         if (birdCount > 1) {
-            System.out.println("Birds are chirping happily.");
+            System.out.println(birdCount + " birds are chirping happily.");
         }
         else if (birdCount == 1) {
             makeSomeNoise();
