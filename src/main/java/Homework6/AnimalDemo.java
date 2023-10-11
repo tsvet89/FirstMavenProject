@@ -30,6 +30,10 @@ public class AnimalDemo {
         System.out.println();
 
         max.vaccinate();
+        System.out.println();
+
+        tweety.synk(0);
+        tweety.synk(2, "Piu piu piu");
 
     }
 }

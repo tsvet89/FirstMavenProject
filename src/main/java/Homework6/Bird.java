@@ -19,6 +19,30 @@ public class Bird extends Animal {
         System.out.println(getName() + " chirps happily!");
     }
 
+    public void synk(int birdCount) {
+        if (birdCount > 1) {
+            System.out.println("Birds are chirping happily.");
+        }
+        else if (birdCount == 1) {
+            makeSomeNoise();
+        }
+        else {
+            System.out.println("All is quiet!");
+        }
+    }
+
+    public void synk(int birdCount, String birdSong) {
+        if (birdCount > 1) {
+            System.out.println(birdCount + " birds are singing " + birdSong);
+        }
+        else if (birdCount == 1) {
+            makeSomeNoise();
+        }
+        else {
+            System.out.println("All is quiet!");
+        }
+    }
+
     public void openCage() {
         isCageOpened = true;
         System.out.println("The cage is open!");
